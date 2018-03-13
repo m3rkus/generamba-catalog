@@ -1,0 +1,17 @@
+{% include 'header' %}
+
+import UIKit
+
+class {{module_info.name}}Controller: UIViewController {
+
+    var output: {{module_info.name}}ControllerViewOutput!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+}
+
+extension {{module_info.name}}Controller: {{module_info.name}}ControllerViewInput {
+
+}
