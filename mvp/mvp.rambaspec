@@ -10,5 +10,11 @@ license: "MIT"
 
 code_files:
 # Configurator
-# - {custom_name: "{{ module_info.file_basename }}/Configurator/{{ module_info.file_basename }}Configurator.swift",  path: Code/Configurator/Configurator.swift.liquid}
 - {name: Configurator/Configurator.swift,  path: Code/Configurator/configurator.swift.liquid}
+- {name: Configurator/Initializer.swift,  path: Code/Configurator/initializer.swift.liquid}
+# View
+- {name: View/Controller.swift,  path: Code/View/controller.swift.liquid}
+- {name: View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
+- {name: View/ViewOutput.swift,  path: Code/View/view_output.swift.liquid}
+# Presenter
+- {name: Presenter/Presenter.swift,  path: Code/Presenter/presenter.swift.liquid}
