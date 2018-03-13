@@ -1,0 +1,18 @@
+{% include 'header' %}
+
+import UIKit
+
+class TestConfigurator {
+    func configureViewInput<UIViewController>(viewInput: UIViewController) {
+        if let viewController = viewInput as? TestController {
+            configure(viewController: viewController)
+        }
+    }
+
+    private func configure(viewController: TestController) {
+        let presenter = TestPresenter()
+        presenter.view = viewController
+
+        viewController.output = presenter
+    }
+}
