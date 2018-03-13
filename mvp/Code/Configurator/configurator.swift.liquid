@@ -2,15 +2,15 @@
 
 import UIKit
 
-class TestConfigurator {
+class {{module_info.name}}Configurator {
     func configureViewInput<UIViewController>(viewInput: UIViewController) {
-        if let viewController = viewInput as? TestController {
+        if let viewController = viewInput as? {{module_info.name}}Controller {
             configure(viewController: viewController)
         }
     }
 
-    private func configure(viewController: TestController) {
-        let presenter = TestPresenter()
+    private func configure(viewController: {{module_info.name}}Controller) {
+        let presenter = {{module_info.name}}Presenter()
         presenter.view = viewController
 
         viewController.output = presenter
